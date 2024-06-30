@@ -9,6 +9,7 @@
 #https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
 """
 Sentinel-2
+
 The Copernicus Sentinel-2 mission consists of two polar-orbiting satellites that are positioned in the same sun-synchronous orbit, with a phase difference of 180°.
 It aims to monitor changes in land surface conditions. 
 The satellites have a wide swath width (290 km) and a high revisit time. 
@@ -44,10 +45,10 @@ import hmac
 
 #https://pypi.org/project/st-files-connection/
 #pip install st-files-connection
-from st_files_connection import FilesConnection
+#from st_files_connection import FilesConnection
 
 #https://pystac.readthedocs.io/en/stable/
-#conda install pystac-client
+#conda install -c conda-forge  pystac-client
 from pystac_client import Client 
 
 #https://odc-stac.readthedocs.io/en/latest/intro.html
