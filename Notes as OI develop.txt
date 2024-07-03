@@ -1,0 +1,13 @@
+
+# Imagine this as a live tutorial
+1) what is the best method for exporting dependencies for streamlit deployment?
+
+
+
+great resource for app buildin with GEP
+https://github.com/opengeos
+
+
+Note:
+git clone https://github.com/opengeos/streamlit-map-template
+#amazing for working with Github Resources

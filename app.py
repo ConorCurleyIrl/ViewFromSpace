@@ -35,6 +35,8 @@ https://browser.dataspace.copernicus.eu/?zoom=9&lat=45.5043&lng=12.73178&themeId
 #############################################################################
 #imports
 #############################################################################
+#stanadard libraries
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -53,7 +55,7 @@ from pystac_client import Client
 
 #https://odc-stac.readthedocs.io/en/latest/intro.html
 #conda install -c conda-forge odc-stac
-from odr.stac import load
+from odc.stac import  load
 
 #############################################################################
 
@@ -92,7 +94,7 @@ columns = ['collections', 'start_date', 'end_date', 'min_cloud_cover' ]
 # This is a new componet - I wonder how much customization is possible 
 # Would be nice to have a maps and a pin drop interface for selecting the spot
 # Why is there '*' at the end of each label - does this bold it?
-with st.form(key=test):
+with st.form(key='test'):
     collections =st.selectbox("collections*", options= collections, index=None)
     start_date  = st.date_input(label="start_date*")
     end_date  = st.date_input(label="end_date*")
@@ -199,7 +201,7 @@ with st.form(key="test"):
         st.dataframe(st.session_state.mdf)
         st.success("Your request successfully submitted!")
 
-        data = search_satellite_images(collection=collection,
+        data = search_satelitte_images(collection=collection,
                                        date=f"{start_date}/{end_date}",
                                        cloud_cover=(0, max_cloud_cover),
                                        bbox=get_bbox_with_buffer(latitude=latitude, longitude=longitude, buffer=buffer))
