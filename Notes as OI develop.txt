@@ -11,3 +11,11 @@ https://github.com/opengeos
 Note:
 git clone https://github.com/opengeos/streamlit-map-template
 #amazing for working with Github Resources
+
+
+Terminal commands:
+conda create -n st python=3.11
+conda activate st
+conda install requirements.txt
+
+
