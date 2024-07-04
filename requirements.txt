@@ -6,3 +6,4 @@ numpy
 pystac_client
 odc.stac
 pip
+matplotlib
