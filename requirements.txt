@@ -3,7 +3,6 @@
 streamlit
 pandas
 numpy
-hmac
 pystac_client
 odc.stac
-
+pip
